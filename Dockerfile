@@ -16,4 +16,4 @@ WORKDIR /usr/src/app/monitor
 
 RUN chmod +x monitor.sh
 
-#RUN ./monitor.sh -D /config
+RUN ./monitor.sh -D /config
