@@ -2,7 +2,7 @@ FROM python:3.6
 LABEL maintainer="unclehook <https://github.com/unclehook/bleha>"
 
 RUN apt-get update
-RUN apt-get install -y mosquitto-clients bluez-hcidump bc l2ping
+RUN apt-get install -y mosquitto-clients bluez-hcidump bc bluez
 RUN rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /usr/src/app
