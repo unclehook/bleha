@@ -1,7 +1,7 @@
 FROM python:3.6
 LABEL maintainer="unclehook <https://github.com/unclehook/bleha>"
 
-RUN apt-get update && apt-get install -y mosquitto-clients bluez-hcidump bc bluez && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y mosquitto-clients bluez-hcidump bc bluez xxd && rm -rf /var/lib/apt/lists/*
 
 VOLUME /config
 
