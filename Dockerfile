@@ -14,4 +14,4 @@ WORKDIR /usr/src/app/monitor
 
 RUN chmod +x monitor.sh
 
-CMD ["/usr/src/app/monitor/monitor.sh", "-m", "-D", "/config"]
+CMD ["/usr/src/app/monitor/monitor.sh", "-m", "-f", "-b", "-g","-D", "/config"]
